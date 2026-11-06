@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 749cf75e6622c2f4f909cdcfc3571fed, type: 3}
+  m_Name: MelleEnemyData
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyData
+  EnemyName: Melee
+  Prefab: {fileID: 3033819975980803333, guid: 11aad0e843bd6974eb6e6eb0ae796d73, type: 3}
+  MaxHealth: 100
+  MoveSpeed: 3
+  StopDistance: 0.5
+  ScoreReward: 10

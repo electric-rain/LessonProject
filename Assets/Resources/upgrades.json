@@ -1,0 +1,44 @@
+{
+  "branches": [
+    {
+      "branchName": "Damage",
+      "levels": [
+        {
+          "level": 1,
+          "cost": 100,
+          "value": 5.0,
+          "description": "Урон +5"
+        },
+        {
+          "level": 2,
+          "cost": 250,
+          "value": 10.0,
+          "description": "Урон +10"
+        },
+        {
+          "level": 3,
+          "cost": 500,
+          "value": 15.0,
+          "description": "Урон +15"
+        }
+      ]
+    },
+    {
+      "branchName": "Health",
+      "levels": [
+        {
+          "level": 1,
+          "cost": 80,
+          "value": 20.0,
+          "description": "HP +20"
+        },
+        {
+          "level": 2,
+          "cost": 200,
+          "value": 50.0,
+          "description": "HP +50"
+        }
+      ]
+    }
+  ]
+}

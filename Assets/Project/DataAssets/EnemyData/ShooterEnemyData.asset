@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 749cf75e6622c2f4f909cdcfc3571fed, type: 3}
+  m_Name: ShooterEnemyData
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyData
+  EnemyName: Shooter
+  Prefab: {fileID: 6045227529020740924, guid: 4adfe4159fc5a8647b34e24ae674b0af, type: 3}
+  MaxHealth: 50
+  MoveSpeed: 2
+  StopDistance: 12
+  ScoreReward: 20
