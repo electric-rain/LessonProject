@@ -19,5 +19,5 @@ MonoBehaviour:
   _lifeTime: 3
   _spawnOffset: 0.6
   _fireRate: 0.3
-  _spread: 20
-  _pelletsPerShot: 5
+  _spread: 10
+  _pelletsPerShot: 10

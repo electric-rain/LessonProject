@@ -25,6 +25,15 @@ public class ScoreManager : MonoBehaviour
             ui.Bind(this);
     }
 
+    public bool TrySpenfScore(int amount)
+    {
+        if (amount < 0) return false;
+        if (Score < amount) return false;
+
+        Score -= amount;
+        return true;
+    }
+
     public void AddScore(int amount)
     {
         _score += amount;

@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8645958027204418410}
   - component: {fileID: 2326521250501485732}
+  - component: {fileID: 9175130659523550508}
   - component: {fileID: 2958383697478122380}
   - component: {fileID: 2191560414526998328}
   - component: {fileID: 3474505297002254521}
-  - component: {fileID: 9175130659523550508}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -64,50 +64,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2958383697478122380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615389654601913521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6251542be0552394ca9fc29b4c91b751, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Health
-  _maxHealth: 100
-  _hurtSound: {fileID: 8300000, guid: 6351c979618bceb4c9b750d38717d1c7, type: 3}
-  _healSound: {fileID: 8300000, guid: a72e8cbd7f089d84c93137934d113866, type: 3}
---- !u!114 &2191560414526998328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615389654601913521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 985251c21d6783f4c877342641eecca4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  _moveSpeed: 5
-  _prewarmBullets: 20
-  _availableWeapons:
-  - {fileID: 11400000, guid: 0bfbd7dfd5956334da60276dadcf1ec8, type: 2}
-  - {fileID: 11400000, guid: 057e8e60cdc1b08429a8fb4f421cbf4a, type: 2}
---- !u!114 &3474505297002254521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615389654601913521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 609f63f6ed2b25f4287b3441b343122a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DamageTester
 --- !u!60 &9175130659523550508
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -162,6 +118,50 @@ PolygonCollider2D:
       - {x: -0.97841746, y: 0.055818215}
       - {x: -0.058360934, y: 0.048857957}
   m_UseDelaunayMesh: 1
+--- !u!114 &2958383697478122380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615389654601913521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6251542be0552394ca9fc29b4c91b751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  _maxHealth: 100
+  _hurtSound: {fileID: 8300000, guid: 6351c979618bceb4c9b750d38717d1c7, type: 3}
+  _healSound: {fileID: 8300000, guid: a72e8cbd7f089d84c93137934d113866, type: 3}
+--- !u!114 &2191560414526998328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615389654601913521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 985251c21d6783f4c877342641eecca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  _moveSpeed: 5
+  _prewarmBullets: 20
+  _availableWeapons:
+  - {fileID: 11400000, guid: 0bfbd7dfd5956334da60276dadcf1ec8, type: 2}
+  - {fileID: 11400000, guid: 057e8e60cdc1b08429a8fb4f421cbf4a, type: 2}
+--- !u!114 &3474505297002254521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615389654601913521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 609f63f6ed2b25f4287b3441b343122a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DamageTester
 --- !u!1 &2264085475076252530
 GameObject:
   m_ObjectHideFlags: 0

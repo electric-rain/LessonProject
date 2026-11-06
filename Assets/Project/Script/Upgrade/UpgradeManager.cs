@@ -3,10 +3,23 @@ using UnityEngine;
 public class UpgradeManager : MonoBehaviour
 {
     public GameUpgradeConfig config;
+    [SerializeField] private PlayerStats _playerStats;
 
     private void Awake()
     {
         LoadUpgrade();
+    }
+
+    public bool TryByeUpgrade(string branchName, int levelIndex)
+    {
+        var upgrade = GetUpgrade(branchName, levelIndex);
+        if (upgrade == null) return false;
+
+        if (!ScoreManager.Instance.TrySpenfScore(upgrade.cost))
+            return false;
+
+        _playerStats.ApplyUpgrade(branchName, upgrade);
+        return true;
     }
 
     private void LoadUpgrade()

@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private WeaponData _currentWeapon;
     private float _fireTimer;
 
+    private PlayerStats _playerStats;
     private Collider2D _playerCollider;
     private Rigidbody2D _rb;
     private Health _health;
@@ -31,6 +32,7 @@ public class PlayerController : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         _health = GetComponent<Health>();
         _playerCollider = GetComponent<Collider2D>();
+        _playerStats = GetComponent<PlayerStats>();
         Instance = this;
 
         foreach (var weapon in _availableWeapons)
