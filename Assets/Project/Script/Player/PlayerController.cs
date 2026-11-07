@@ -95,7 +95,10 @@ public class PlayerController : MonoBehaviour
             Vector2 spreadDirection = RotateVector(direction, randomAngle);
 
             Bullet bullet = pool.Get();
-            bullet.Setup(_currentWeapon.BulletSpeed, _currentWeapon.Damage, _currentWeapon.LifeTime);
+
+            var finalDamage = _playerStats.ModifyDamage(_currentWeapon.Damage);
+
+            bullet.Setup(_currentWeapon.BulletSpeed, finalDamage, _currentWeapon.LifeTime);
             bullet.transform.position = (Vector2)transform.position + spreadDirection * _currentWeapon.SpawnOffset;
 
             bullet.OnExpired += (expiredBullet) => pool.Return(expiredBullet);
